@@ -31,6 +31,19 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun userProfile() {
+    Text(text = "Asep Septiadi")
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun userProfilePreview() {
+    DeckprojectTheme {
+        userProfile()
+    }
+}
+
+@Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
