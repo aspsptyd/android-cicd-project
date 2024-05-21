@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -31,15 +32,18 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun userProfile() {
-    Text(text = "Asep Septiadi")
+fun UserProfile() {
+    Column {
+        Text(text = "Asep Septiadi")
+        Text(text = "UID 44342")
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
-private fun userProfilePreview() {
+private fun UserProfilePreview() {
     DeckprojectTheme {
-        userProfile()
+        UserProfile()
     }
 }
 
